@@ -107,11 +107,6 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public boolean existById(String pk) {
-        return false;
-    }
-
-    @Override
     public boolean existsById(String username) {
         return findById(username).isPresent();
     }

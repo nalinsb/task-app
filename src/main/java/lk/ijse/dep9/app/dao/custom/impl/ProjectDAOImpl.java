@@ -105,11 +105,6 @@ public class ProjectDAOImpl implements ProjectDAO {
     }
 
     @Override
-    public boolean existById(Integer pk) {
-        return false;
-    }
-
-    @Override
     public boolean existsById(Integer id) {
         return findById(id).isPresent();
     }
