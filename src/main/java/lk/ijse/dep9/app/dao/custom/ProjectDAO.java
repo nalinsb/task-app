@@ -4,4 +4,5 @@ import lk.ijse.dep9.app.dao.CurdDAO;
 import lk.ijse.dep9.app.entity.Project;
 
 public interface ProjectDAO extends CurdDAO<Project, Integer> {
+    boolean existsById(Integer id);
 }
