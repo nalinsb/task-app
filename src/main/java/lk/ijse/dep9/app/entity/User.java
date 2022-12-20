@@ -12,13 +12,13 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+
 public class User implements SuperEntity {
-    @Id
+
     private String username;
-    @Column(name="full_name" ,nullable = false)
+
     private String fullName;
-    @Column(nullable = false)
+
     private String password;
 
 
