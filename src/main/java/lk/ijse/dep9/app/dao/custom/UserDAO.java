@@ -6,4 +6,5 @@ import lk.ijse.dep9.app.entity.User;
 public interface UserDAO extends CurdDAO<User, String> {
 
 
+    boolean existsById(String username);
 }
