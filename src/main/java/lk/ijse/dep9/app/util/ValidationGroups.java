@@ -1,14 +1,17 @@
 package lk.ijse.dep9.app.util;
 
+import lombok.Builder;
+import net.bytebuddy.implementation.bind.annotation.Default;
+
 public interface ValidationGroups {
-    interface Create{
+    interface Create extends Default {
 
     }
-    interface Update{
+    interface Update extends Default{
 
     }
-    interface Delete{
+    interface Delete extends Default{
 
     }
-    
+
 }
